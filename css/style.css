@@ -42,7 +42,7 @@ body {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: white;
+  color: wheat;
   font-size: 1.125em;
 }
 
@@ -50,4 +50,29 @@ a.menu-logo {
   display: block;
   float: left;
   margin-left: 10px;
+}
+
+/*Introducao*/
+.intro {
+  padding: 150px 0;
+  text-align: center;
+  color: wheat;
+  background: url("../img/bg-intro.jpg") no-repeat center center;
+  background-size: cover;
+}
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+.intro h1::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: wheat;
+  margin: 10px auto;
+}
+.intro p {
+  font-style: italic;
+  font-size: 1.125em;
 }

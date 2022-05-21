@@ -1,0 +1,31 @@
+/*Introducao*/
+.intro {
+  padding: 150px 0;
+  text-align: center;
+  color: $branco;
+
+  background: url('../img/bg-intro.jpg') no-repeat center center {
+    size: cover;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: fonte(48);
+
+    &::after {
+      content: ' ';
+      display: block;
+      width: 20px;
+      height: 4px;
+      background: $branco;
+      margin: 10px auto;
+    }
+  }
+
+  p {
+    font: {
+      style: italic;
+      size: fonte(18);
+    }
+  }
+}
