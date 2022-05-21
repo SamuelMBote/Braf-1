@@ -3,17 +3,7 @@
   background: $preto;
   padding: 20px 0;
 
-  &-container {
-    max-width: $width-principal;
-    margin: 0 auto;
-
-    &::before,
-    &::after {
-      content: '';
-      display: table;
-      clear: both;
-    }
-  }
+  @include container;
 
   &-nav {
     float: right;

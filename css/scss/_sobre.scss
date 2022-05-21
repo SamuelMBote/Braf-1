@@ -1,0 +1,51 @@
+/*Sobre*/
+.sobre {
+  @include container;
+  padding: 60px 0;
+
+  h2 {
+    font-size: fonte(36);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &-item {
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    h3 {
+      text-align: center;
+      line-height: 1em;
+      background: $preto;
+      width: 220px;
+      color: $branco;
+      padding: 5px 0 5px 0;
+      top: -25px;
+      position: relative;
+
+      font: {
+        style: italic;
+        size: fonte(36);
+        weight: normal;
+      }
+    }
+  }
+
+  >p {
+    font: {
+      size: fonte(18);
+      style: italic;
+    }
+
+    line-height: 1.4em;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 460px;
+  }
+}

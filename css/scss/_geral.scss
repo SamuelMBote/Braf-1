@@ -10,6 +10,22 @@ $width-principal:960px;
   @return calc(($font-size / $contexto) * 1em);
 }
 
+/*Mixin container*/
+@mixin container {
+  &-container {
+    max-width: $width-principal;
+    margin: 0 auto;
+
+    &::before,
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+}
+
 /*Reset*/
 body,
 h1,
