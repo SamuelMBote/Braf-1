@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Variaveis*/
 /*Funçao Fonte*/
+/*Mixin container*/
 /*Reset*/
 body,
 h1,
@@ -75,4 +76,104 @@ a.menu-logo {
 .intro p {
   font-style: italic;
   font-size: 1.125em;
+}
+
+/*Sobre*/
+.sobre {
+  padding: 60px 0;
+}
+.sobre-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.sobre-container::before, .sobre-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sobre h2 {
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sobre-item {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+.sobre-item img {
+  display: block;
+  max-width: 100%;
+}
+.sobre-item h3 {
+  text-align: center;
+  line-height: 1em;
+  background: #252525;
+  width: 220px;
+  color: wheat;
+  padding: 5px 0 5px 0;
+  top: -25px;
+  position: relative;
+  font-style: italic;
+  font-size: 2.25em;
+  font-weight: normal;
+}
+.sobre > p {
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 1.4em;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 460px;
+}
+
+/*Produtos*/
+.produtos {
+  background: wheat;
+  padding: 60px 0;
+  border-top: 3px solid #FFC107;
+  border-bottom: 3px solid #FFC107;
+}
+.produtos-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.produtos-container::before, .produtos-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.produtos-item {
+  width: 300px;
+  float: left;
+  margin: 0 10px 20px 10px;
+}
+.produtos-item h2 {
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+.produtos-item h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid wheat;
+  box-shadow: 0 0 0 5px blue;
+}
+.produtos-item:nth-of-type(1) h2::before {
+  background: "$cafe--1";
+}
+.produtos-item:nth-of-type(2) h2::before {
+  background: "$cafe--2";
+}
+.produtos-item:nth-of-type(3) h2::before {
+  background: "$cafe--3";
+}
+.produtos-item p {
+  line-height: 1.4em;
+  font-size: 0.875em;
 }
