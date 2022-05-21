@@ -158,20 +158,21 @@ a.menu-logo {
   display: block;
   width: 100px;
   height: 100px;
-  background: blue;
   border-radius: 50%;
   margin: 20px auto;
   border: 5px solid wheat;
-  box-shadow: 0 0 0 5px blue;
 }
 .produtos-item:nth-of-type(1) h2::before {
-  background: "$cafe--1";
+  background: #594130;
+  box-shadow: 0 0 0 5px #594130;
 }
 .produtos-item:nth-of-type(2) h2::before {
-  background: "$cafe--2";
+  background: #6f513c;
+  box-shadow: 0 0 0 5px #6f513c;
 }
 .produtos-item:nth-of-type(3) h2::before {
-  background: "$cafe--3";
+  background: #8b4513;
+  box-shadow: 0 0 0 5px #8b4513;
 }
 .produtos-item p {
   line-height: 1.4em;
