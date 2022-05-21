@@ -1,0 +1,11 @@
+/*Variaveis*/
+/*Reset*/
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
