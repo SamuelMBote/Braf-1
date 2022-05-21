@@ -3,6 +3,12 @@ $preto: #252525;
 $branco: white;
 $font-1: Georgia,
 serif;
+$width-principal:960px;
+
+/*Funçao Fonte*/
+@function fonte($font-size, $contexto: 16) {
+  @return calc(($font-size / $contexto) * 1em);
+}
 
 /*Reset*/
 body,
@@ -13,4 +19,9 @@ p,
 ul {
   padding: 0px;
   margin: 0px;
+}
+
+body {
+  font-family: $font-1;
+  color: $preto;
 }

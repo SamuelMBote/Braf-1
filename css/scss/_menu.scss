@@ -1,0 +1,42 @@
+/* Menu*/
+.menu {
+  background: $preto;
+  padding: 20px 0;
+
+  &-container {
+    max-width: $width-principal;
+    margin: 0 auto;
+
+    &::before,
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  &-nav {
+    float: right;
+    margin-right: 10px;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: $branco;
+      font-size: fonte(18)
+    }
+  }
+}
+
+a {
+  &.menu-logo {
+    display: block;
+    float: left;
+    margin-left: 10px;
+  }
+}
