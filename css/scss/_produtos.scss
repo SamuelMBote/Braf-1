@@ -30,22 +30,64 @@
       }
     }
 
-    @for $produto from 1 through 3 {
-      &:nth-of-type(#{$produto}) {
-        h2 {
-          &::before {
-            background: map-get($cafes,
-                $produto);
-            box-shadow: 0 0 0 5px map-get($cafes,
-                $produto);
-          }
-        }
-      }
-    }
+
+    //Teste adicionar cor com loop pela variavel cafes
+    //Primeira opcao de loop
+    //@for $produto from 1 through 3 {
+    //&:nth-of-type(#{"$produto"}) {
+    //h2 {
+    //&::before {
+    //background: map-get($cafes,
+    //  $produto);
+    //box-shadow: 0 0 0 5px map-get($cafes,
+    //  $produto);
+    //}
+    //}
+    //}
+    //}
 
     p {
       line-height: 1.4em;
       font-size: fonte(14);
+    }
+
+
+  }
+
+  &-btn {
+    width: 180px;
+    border: 3px solid $preto;
+    color: $preto;
+    display: block;
+    padding: 15px 0;
+    margin: 20px auto 0 auto;
+
+    text: {
+      decoration: none;
+      transform: uppercase;
+      align: center;
+    }
+
+    font: {
+      size: fonte(18);
+      weight: bold;
+    }
+
+    ;
+  }
+}
+
+
+//Teste adicionar cor com loop pela variavel cor-cafe:list 
+//Segunda opcao de loop
+@each $cidade,
+$cor in $cores-cafe {
+  .#{$cidade} {
+    h2 {
+      &::before {
+        background: $cor;
+        box-shadow: 0 0 0 10px $cor;
+      }
     }
   }
 }
