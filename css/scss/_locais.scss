@@ -1,0 +1,55 @@
+.locais {
+  max-width: $width-principal;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  &-item {
+    clear: both;
+    margin: 60px auto;
+
+
+    &::after,
+    &::before {
+      display: table;
+      content: '';
+      clear: both;
+    }
+
+    img {
+      width: 460px;
+      display: block;
+      float: left;
+      margin: 0 10px;
+    }
+
+    >div {
+      width: 460px;
+      float: left;
+      margin: 0 10px;
+    }
+
+    h2 {
+      font-size: fonte(36);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: fonte(18);
+      line-height: 1.4em;
+      max-width: 320px;
+      margin-bottom: 40px;
+    }
+
+    a {
+      font-size: fonte(18);
+      color: $preto;
+      border: 3px solid $preto;
+      padding: 10px 20px;
+
+      text: {
+        decoration: none;
+        transform: uppercase;
+      }
+    }
+  }
+}
