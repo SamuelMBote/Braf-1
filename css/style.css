@@ -18,6 +18,10 @@ body {
   color: #252525;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Menu*/
 .menu {
   background: #252525;
@@ -193,4 +197,103 @@ a.menu-logo {
 .mineiro h2::before {
   background: #8b4513;
   box-shadow: 0 0 0 10px #8b4513;
+}
+
+.locais {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.locais-item {
+  clear: both;
+  margin: 60px auto;
+}
+.locais-item::after, .locais-item::before {
+  display: table;
+  content: "";
+  clear: both;
+}
+.locais-item img {
+  width: 460px;
+  display: block;
+  float: left;
+  margin: 0 10px;
+}
+.locais-item > div {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+.locais-item h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+.locais-item p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
+}
+.locais-item a {
+  font-size: 1.125em;
+  color: #252525;
+  border: 3px solid #252525;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.assine {
+  background: wheat;
+  padding: 30px 0;
+}
+.assine-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.assine-container::before, .assine-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.assine-info {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+.assine-info h2 {
+  font-size: 2.25em;
+}
+.assine-info p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.assine form {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+.assine form label {
+  display: none;
+}
+.assine form input {
+  width: 320px;
+  border: 3px solid #252525;
+  background: none;
+  padding: 10px;
+  float: left;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+.assine form button {
+  background: #252525;
+  text-transform: uppercase;
+  width: 140px;
+  padding: 13px 0;
+  color: wheat;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: Georgia, serif;
 }
