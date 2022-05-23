@@ -28,6 +28,7 @@
         margin: 20px auto;
         border: 5px solid $branco;
       }
+
     }
 
 
@@ -51,7 +52,14 @@
       font-size: fonte(14);
     }
 
+    @include responsivo(m) {
+      width: 220px;
+    }
 
+    @include responsivo(s) {
+      width: 300px;
+      margin: 0 auto 20px auto;
+    }
   }
 
   &-btn {

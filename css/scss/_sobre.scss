@@ -35,6 +35,15 @@
         weight: normal;
       }
     }
+
+    @include responsivo(m) {
+      width: 340px;
+    }
+
+    @include responsivo(s) {
+      width: 300px;
+      margin: 0 auto
+    }
   }
 
   >p {

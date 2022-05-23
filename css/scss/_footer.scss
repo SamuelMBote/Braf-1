@@ -1,7 +1,6 @@
 .footer {
   @include container;
   padding: 40px 0;
-
   background: $preto;
 
   p {
@@ -10,12 +9,21 @@
     font-size: fonte(18);
     line-height: 1.4em;
     color: $branco;
+
+    @include responsivo(d) {
+      float: none;
+      margin: 0px;
+    }
   }
 
   img {
     float: right;
     margin: 0 10px;
     display: block;
-  }
 
+    @include responsivo(s) {
+      float: none;
+      margin: 20px 0;
+    }
+  }
 }

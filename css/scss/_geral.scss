@@ -26,8 +26,15 @@ $width-principal:960px;
       display: table;
       clear: both;
     }
-  }
 
+    @include responsivo(m) {
+      max-width: 720px;
+    }
+
+    @include responsivo(s) {
+      max-width: 300px;
+    }
+  }
 }
 
 /*Reset*/

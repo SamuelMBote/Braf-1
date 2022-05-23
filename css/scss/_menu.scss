@@ -5,6 +5,13 @@
 
   @include container;
 
+  @include responsivo(s) {
+    &-container {
+      max-width: 720px;
+    }
+  }
+
+
   &-nav {
     float: right;
     margin-right: 10px;
@@ -18,8 +25,18 @@
       padding: 10px;
       text-decoration: none;
       color: $branco;
-      font-size: fonte(18)
+      font-size: fonte(18);
+
     }
+
+    @include responsivo(s) {
+      float: none;
+      clear: both;
+    }
+  }
+
+  @include responsivo(s) {
+    text-align: center;
   }
 }
 
@@ -28,5 +45,10 @@ a {
     display: block;
     float: left;
     margin-left: 10px;
+
+    @include responsivo(s) {
+      float: none;
+      margin: 0 auto;
+    }
   }
 }

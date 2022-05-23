@@ -19,6 +19,13 @@
       }
     }
 
+    @include responsivo(m) {
+      width: 340px;
+    }
+
+    @include responsivo(s) {
+      width: 300px;
+    }
   }
 
   form {
@@ -44,6 +51,14 @@
         family: $font-1
       }
 
+      @include responsivo(m) {
+        width: 340px;
+      }
+
+      @include responsivo(s) {
+        width: 300px;
+        margin: 10px 0 0 0;
+      }
     }
 
     button {
@@ -60,6 +75,15 @@
         //style: italic;
         family: $font-1
       }
+    }
+
+    @include responsivo(m) {
+      width: 340px;
+    }
+
+    @include responsivo(s) {
+      width: 300px;
+
     }
   }
 }

@@ -28,4 +28,8 @@
       size: fonte(18);
     }
   }
+
+  @include responsivo(s) {
+    padding: 60px 0;
+  }
 }
