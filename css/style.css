@@ -297,3 +297,29 @@ a.menu-logo {
   font-size: 1.5em;
   font-family: Georgia, serif;
 }
+
+.footer {
+  padding: 40px 0;
+  background: #252525;
+}
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.footer-container::before, .footer-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer p {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+  color: wheat;
+}
+.footer img {
+  float: right;
+  margin: 0 10px;
+  display: block;
+}
