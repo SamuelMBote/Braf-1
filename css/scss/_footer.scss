@@ -26,4 +26,20 @@
       margin: 20px 0;
     }
   }
+
+  button {
+    background: $preto;
+    text-transform: uppercase;
+    width: 140px;
+    padding: 13px 0;
+    color: $branco;
+    border: none;
+    cursor: pointer;
+
+    font: {
+      size: fonte(24);
+      //style: italic;
+      family: $font-1
+    }
+  }
 }
